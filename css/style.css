@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+html {
+    font-size: 625%;
+}
+
+i {
+    font-style: normal;
+}
+[v-cloak] {
+    display: none;
+}
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0
+}
+body {
+    width: 100%;
+    font: 12px"Arial Narrow", "微软雅黑", HELVETICA;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #2d374b;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #cd0200;
+    text-decoration: underline
+}
+
+em {
+    font-style: normal
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+p {
+    word-wrap: break-word
+}
+.clear{ clear:both} 
+/* 整体宽度 */
+#app {
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    min-width: 13.66rem;
+    /* padding-top: 1.6rem; */
+}
+/* 首页 */
+#index {
+    max-width: 25.6rem;
+    min-width: 13.66rem;
+    margin: 0 auto;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-position: center;
+}
+#indexBottom{
+    height: 22.222%;
+    width: 100%;
+    background: #252525;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#indexRight{
+    height: 77.777778%;
+    width: 34.115%;
+    background: #646CA1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+#indexTop{
+    height: 1.43rem;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    padding-top: 0.69rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-left: 6%;
+}
+#indexTop .menu{
+    margin-left: 6.82%;
+    margin-top: 0.23rem;
+    width: 4.28rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#indexTop .menu a{
+    font-size: 0.19rem;
+    color: #fff;
+    font-weight: 600;
+    opacity: 0.5;height: 0.19rem;
+}
+
+#indexTop .menu a:hover, #indexTop .menu a:active, .current{
+    opacity: 1;
+}
+
+#indexTop .menuRight {
+    margin-right: 12%;
+    margin-top: 0.12rem;
+    position: absolute;
+    top: 0.69rem;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#indexTop .menuRight .line {
+    height: 0.04rem;
+    width: 0.6rem;
+    background: #fff;
+    margin-right: 0.04rem;
+}
+
+#indexTop .menuRight .lineCurrent {
+    height: 0.06rem;
+    width: 0.46rem;
+    background: #fff;
+    margin-right: 0.11rem;
+}
+
+#indexTop .circleDiv {
+    margin-right: 12%;
+    position: absolute;
+    top: 1.15rem;
+    right: 0;
+    height: 0.28rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+#indexTop .circleDiv .ring{
+    height: 0.28rem;
+    width: 0.28rem;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #A4DD99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.14rem;
+}
+#indexTop .circleDiv .circle{
+    height: 0.2rem;
+    width: 0.2rem;
+    background-color: #A4DD99;
+    border-radius: 50%;
+}
+#indexTop .circleDiv span{
+    color: #fff;
+    font-size: 0.25rem;
+    font-weight: 600;
+}
+/* 关于我们 */
