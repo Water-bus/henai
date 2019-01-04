@@ -254,7 +254,8 @@ p {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: flex-start
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
 }
 #body .leftBox{
     width: 11.74rem;
@@ -274,4 +275,31 @@ p {
     margin: 0rem auto;
     background: #5B5E63;
     padding: 0.52rem 1.14rem 0.89rem 0.62rem;  
+}
+#caseBox a{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction: column;
+    width:1.1rem;
+}
+#caseBody2{
+    width: 19.2rem;
+    height: 9.4rem;
+    margin: 0rem auto;
+    background: #363636;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#caseBody3{
+    width: 19.2rem;
+    height: 9.4rem;
+    margin: 0rem auto;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
