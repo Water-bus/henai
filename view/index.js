@@ -1,13 +1,12 @@
 const index = {
-    data: () => ({
-    }),
+    data: () => ({}),
     template: `<div id="index" style="background-image: url(./image/indexBg.png);">
     <div id="indexTop">
         <img src="./image/indexmenu.png" style="width:43px;height:23px;" />
         <div class="menu">
-            <a>HOME</a>
-            <a>About us</a>
-            <a>Our case</a>
+            <a>首页</a>
+            <a>关于我们</a>
+            <a>我们的案例</a>
         </div>
         <div class="menuRight">
             <div class="lineCurrent"></div>
@@ -29,9 +28,15 @@ const index = {
         <img src="./image/xiayiye.png" style="width:1.85rem;height:0.98rem;margin-right: 17%;cursor: pointer;" >
     </div>
 </div>`,
-    methods: {
+    methods: {},
+    mounted: function () {
+        const that = this
+        $('#index').css('height', $(window).height() + 'px')
+        window.onresize = () => {
+            return (() => {
+                $('#index').css('height', $(window).height() + 'px')
+            })()
+        }
     },
-    mounted: function () {},
-    created: function () {
-    }
+    created: function () {}
 }

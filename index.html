@@ -12,42 +12,85 @@
     <link rel="shortcut icon" href="./image/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css" media="all">
+    <style>
+        @media screen and (max-width: 1024px) {
+            html {
+                font-size: 333.333%;
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            html {
+                font-size: 333.333%;
+            }
+        }
+
+        @media screen and (min-width: 1366px) {
+            html {
+                font-size: 443.506%;
+            }
+        }
+
+        @media screen and (min-width: 1920px) {
+            html {
+                font-size: 625%;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">
-        <router-view></router-view>
-        
-    </div>
-    <script>
-        var rootUrl = "${ctxPath}";
-    </script>
-    <script src="./js/jquery-3.3.1.js"></script>
-    <script src="./js/vue.js"></script>
-    <script src="./js/vue-router.js"></script>
-    <script src="./js/component.js"></script>
-    <script src="./view/index.js"></script>
-    <script src="./js/router.js"></script>
-    <script>
-        var vm = new Vue({
-            el: '#app',
-            router,
-            data: {
+        <!-- <router-view></router-view> -->
+        <div class="main">
+            <div id="header">
+                <a style="opacity:1;cursor: auto;"><img src="./image/indexmenu.png" style="width:0.42rem;height:0.22rem;" /></a>
+                <a href="#/index">首页</a>
+                <a href="#/aboutus">关于我们</a>
+                <a href="#/case" style="opacity:1">我们的案例</a>
+            </div>
+            <div id='caseBody1'>
 
-            },
-            methods: {},
-            mounted: function () {
-                const that = this
-                $('#index').css('height', $(window).height() + 'px')
-                window.onresize = () => {
-                    return (() => {
-                        $('#index').css('height', $(window).height() + 'px')
-                    })()
-                }
-            },
-            created: function () {}
-        })
-    </script>
+            </div>
+            <div id="foot">
+                <div style="color:#fff;font-size: 0.18rem;margin-top: 0.33rem;">联系我们</span>
+                    <div style="color:#fff;font-size: 0.14rem;margin-top: 0.2rem;"><img src="./image/smalllogo.png"
+                            style="width: 0.19rem;height: 0.19rem;" />上海赫耐会务服务有限公司</div>
+                    <div style="color:#fff;font-size: 0.14rem;margin-top: 0.08rem;">联系人：Karry</div>
+                    <div style="color:#fff;font-size: 0.14rem;margin-top: 0.08rem;">手机：15372025263</div>
+                    <div style="color:#fff;font-size: 0.14rem;margin-top: 0.08rem;">地址：上海市漕溪公路18号上实大厦14楼A座</div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var rootUrl = "${ctxPath}";
+        </script>
+        <script src="./js/jquery-3.3.1.js"></script>
+        <script src="./js/vue.js"></script>
+        <script src="./js/vue-router.js"></script>
+        <script src="./js/component.js"></script>
+        <script src="./view/index.js"></script>
+        <script src="./js/router.js"></script>
+        <script>
+            var vm = new Vue({
+                el: '#app',
+                router,
+                data: {
+
+                },
+                methods: {},
+                mounted: function () {
+                    const that = this
+                    $('.main').css('min-height', $(window).height() + 'px')
+                    window.onresize = () => {
+                        return (() => {
+                            $('.main').css('min-height', $(window).height() + 'px')
+                        })()
+                    }
+                },
+                created: function () {}
+            })
+        </script>
 </body>
 
 </html>

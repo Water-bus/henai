@@ -35,7 +35,7 @@ select {
 }
 body {
     width: 100%;
-    font: 12px"Arial Narrow", "微软雅黑", HELVETICA;
+    font: 12px "Arial Narrow", "微软雅黑", HELVETICA;
     background: #fff;
     -webkit-text-size-adjust: 100%;
 }
@@ -75,10 +75,10 @@ p {
 .clear{ clear:both} 
 /* 整体宽度 */
 #app {
-    width: 100%;
+    /* width: 100%; */
     background: #fff;
-    overflow: hidden;
-    min-width: 13.66rem;
+    /* overflow: hidden;
+    min-width: 13.66rem; */
     /* padding-top: 1.6rem; */
 }
 /* 首页 */
@@ -205,3 +205,73 @@ p {
     font-weight: 600;
 }
 /* 关于我们 */
+.main{
+    max-width: 25.6rem;
+    min-width: 17.96rem;
+    margin: 0 auto;
+    position: relative;
+    background: #5B5E63;
+}
+/* 顶部 */
+#header {
+    height: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1.19rem;
+    background: #646CA1;
+}
+#header a{
+    margin-right: 0.8rem;
+    font-size: 0.19rem;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 600
+}
+#header a:hover{
+    opacity: 1;
+}
+/* 底部 */
+#foot {
+    height: 2.5rem;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #464646;
+    width: 100%;
+    text-align: center;
+}
+/* 关于我们主体 */
+#body{
+    width: 17.96rem;
+    height: 7.9rem;
+    margin: 1.21rem auto 0.69rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+#body .leftBox{
+    width: 11.74rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#body .rightBox{
+    width: 6.22rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/* 案例主体 */
+#caseBody1{
+    width: 19.2rem;
+    margin: 0rem auto;
+    background: #5B5E63;
+    padding: 0.52rem 1.14rem 0.89rem 0.62rem;  
+}
